@@ -6,6 +6,7 @@ import whiskey from './images/whiskey.jpg';
 import tubby from './images/tubby.jpg';
 import hazel from './images/hazel.jpg';
 import './App.css';
+import Navbar from './Navbar';
 
 class App extends Component {
   static defaultProps = {
@@ -53,6 +54,7 @@ class App extends Component {
 
     return (
       <div>
+        <Navbar dogs={this.props.dogs} />
         <Switch>
           <Route
             exact
